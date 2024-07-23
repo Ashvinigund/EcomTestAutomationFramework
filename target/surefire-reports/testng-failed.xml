@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="ecom.testcases.AddtoCartPageTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="setUp"/>
+          <include name="testNavigateToLastPage"/>
+          <include name="testAddToCart"/>
+        </methods>
+      </class> <!-- ecom.testcases.AddtoCartPageTest -->
+      <class name="ecom.testcases.SignUpPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="initializeBrowserAndOpenApplicationURL"/>
+          <include name="signUpWithValidDetailsTest"/>
+          <include name="signUpWithInvalidDetailsTest"/>
+        </methods>
+      </class> <!-- ecom.testcases.SignUpPageTest -->
+      <class name="ecom.testcases.LoginpageTest">
+        <methods>
+          <include name="initializeBrowserAndOpenApplicationURL"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="afterClass"/>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ecom.testcases.LoginpageTest -->
+      <class name="ecom.testcases.CheckoutProcessTest">
+        <methods>
+          <include name="testCheckoutWithItemsInCart"/>
+          <include name="initializeBrowserAndOpenApplicationURL"/>
+          <include name="tearDown"/>
+          <include name="testCheckoutWithoutItemsInCart"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- ecom.testcases.CheckoutProcessTest -->
+      <class name="ecom.testcases.ProductBrowsingPageTest">
+        <methods>
+          <include name="initializeBrowserAndOpenApplicationURL"/>
+          <include name="setUpClass"/>
+          <include name="testAreProductsDisplayed"/>
+          <include name="tearDownClass"/>
+          <include name="testNavigateToCategory"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ecom.testcases.ProductBrowsingPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

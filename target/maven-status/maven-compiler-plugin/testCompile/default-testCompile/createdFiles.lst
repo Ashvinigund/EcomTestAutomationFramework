@@ -1,0 +1,5 @@
+ecom\testcases\SignUpPageTest.class
+ecom\testcases\AddtoCartPageTest.class
+ecom\testcases\CheckoutProcessTest.class
+ecom\testcases\ProductBrowsingPageTest.class
+ecom\testcases\LoginpageTest.class

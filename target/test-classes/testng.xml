@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EcomTestSuite">
+    
+    <!-- Specify listeners here -->
+    <listeners>
+        <listener class-name="ecom.utils.ListenerClass"/>
+    </listeners>
+    
+    <!-- Define the test suite -->
+    <test name="ecomtestcases" thread-count="6" parallel="tests">
+        <classes>
+            <!-- Specify the test classes with their full package names -->
+            <class name="ecom.testcases.SignUpPageTest"/>
+            <class name="ecom.testcases.LoginpageTest"/>
+            <class name="ecom.testcases.ProductBrowsingPageTest"/>
+            <class name="ecom.testcases.AddtoCartPageTest"/>
+            <class name="ecom.testcases.CheckoutprocessTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
