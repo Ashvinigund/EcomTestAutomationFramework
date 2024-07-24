@@ -19,6 +19,7 @@ public class ExtentReporter {
         File extentReportFile = new File(System.getProperty("user.dir") + "\\TestOutput\\extentReport.html");
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
         
+        
         // Configure the report
         sparkReporter.config().setTheme(Theme.DARK);
         sparkReporter.config().setReportName("Demoblaze Ecom Test Automation Results Report");
@@ -49,10 +50,9 @@ public class ExtentReporter {
         extentReport.setSystemInfo("Operating System", System.getProperty("os.name"));
         extentReport.setSystemInfo("Username", System.getProperty("user.name"));
         extentReport.setSystemInfo("Java Version", System.getProperty("java.version"));
-        ExtentReports extent = new ExtentReports();
-        ExtentObserver reporter = null;
-		extent.attachReporter(reporter);
+       
+        
 
-        return extent;
+        return extentReport;
     }
 }
