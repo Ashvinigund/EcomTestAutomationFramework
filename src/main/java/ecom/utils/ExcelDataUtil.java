@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ExcelDataUtil {
 
-    private static final String FILE_PATH = System.getProperty("user.dir") + "\\src\\main\\java\\ecom\\Testdata\\TutorialsNinjaTestData.xlsx";
+    private static final String FILE_PATH = System.getProperty("user.dir") + "\\src\\main\\java\\ecom\\Testdata\\LoginTestData.xlsx";
 
     public static String generateEmailWithTimeStamp() {
         Date date = new Date();
